@@ -26,7 +26,7 @@ public class BucketSort {
         int bucketRange = max/bucketCount + (max%bucketCount == 0 ? 0 : 1); //the size of the buckets is 10 values
         
         //Create a list of buckets
-        ArrayList<ArrayList<Integer>> buckets = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> buckets = new ArrayList<>(bucketCount);
         for (int i = 0; i < bucketCount; i++) {
             buckets.add(new ArrayList<>()); //adding array lists for each individual bucket
         }
@@ -48,6 +48,7 @@ public class BucketSort {
                 counter++; //incrementing the counter
             }
         }
+        //int[] output = {buckets.get(0).get(0)};
         return listOutput;
     }
     
