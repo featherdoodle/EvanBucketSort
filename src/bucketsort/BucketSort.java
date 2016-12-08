@@ -21,12 +21,14 @@ public class BucketSort {
         //creating an array to store the output (the sorted list)
         int[] listOutput = new int[input.length];//its the length of the input
         
-        int bucketRange = 10; //the size of the buckets is 10 values
-        int bucketCount = max/bucketRange; //calculating the number of buckets needed
+        int bucketSize = 10;
+        int bucketCount = input.length/bucketSize; //calculating the number of buckets needed
+        int bucketRange = max/bucketCount; //the size of the buckets is 10 values
+        
         
         //Create a list of buckets
         ArrayList<ArrayList<Integer>> buckets = new ArrayList<>();
-        for (int i = 0; i <= bucketCount; i++) {
+        for (int i = 0; i < bucketCount; i++) {
             buckets.add(new ArrayList<>()); //adding array lists for each individual bucket
         }
         //Add the numbers to the buckets
