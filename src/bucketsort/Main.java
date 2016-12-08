@@ -12,7 +12,7 @@ public class Main {
 
         Random random = new Random();
 
-        int size = 300000; //the number of values that will be generated
+        int size = 400000; //the number of values that will be generated
         int max = 100000; //the maximum value of the numbers generated
 
         int[] num = new int[size]; //creating a new array to store the unsorted list

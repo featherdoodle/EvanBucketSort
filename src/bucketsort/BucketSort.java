@@ -23,8 +23,7 @@ public class BucketSort {
         
         int bucketSize = 10;
         int bucketCount = input.length/bucketSize; //calculating the number of buckets needed
-        int bucketRange = max/bucketCount; //the size of the buckets is 10 values
-        
+        int bucketRange = max/bucketCount + (max%bucketCount == 0 ? 0 : 1); //the size of the buckets is 10 values
         
         //Create a list of buckets
         ArrayList<ArrayList<Integer>> buckets = new ArrayList<>();
