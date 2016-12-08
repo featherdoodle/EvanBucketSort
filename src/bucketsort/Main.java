@@ -12,8 +12,8 @@ public class Main {
 
         Random random = new Random();
 
-        int size = 100; //the number of values that will be generated
-        int max = 100; //the maximum value of the numbers generated
+        int size = 300000; //the number of values that will be generated
+        int max = 100000; //the maximum value of the numbers generated
 
         int[] num = new int[size]; //creating a new array to store the unsorted list
 
@@ -23,7 +23,7 @@ public class Main {
         }
 
         //uncomment to print out the unsorted array (faster without printing it)
-        System.out.println(Arrays.toString(num));
+        //System.out.println(Arrays.toString(num));
 
         BucketSort bucketSort = new BucketSort();
         //finding the time the sort starts to find sort efficiency
@@ -34,7 +34,7 @@ public class Main {
         //finding the time when the sort is finished
         long endTime = System.nanoTime();
         //printing out the sorted list and the time
-        System.out.println(Arrays.toString(sortedList));
+        //System.out.println(Arrays.toString(sortedList));
         System.out.println("Time: " + (endTime-startTime));
         
         
